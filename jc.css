@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Splash&display=swap'); */
+
 @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); */
+
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
@@ -13,9 +13,6 @@ body {
     /* background-repeat:no-repeat; */
     background-color: rgb(249, 252, 255);
     box-sizing: border-box;
-
-
-
 }
 
 * {
@@ -31,22 +28,32 @@ header {
     right: 100vw; */
 }
 
+.divan{
+    animation-name: op;
+    animation-timing-function: ease-out;
+    animation-duration: 1.4s;
+    animation-iteration-count: 1;
+
+    animation-direction: normal;
+}
+
 .nav {
 
     display: flex;
     /* border: 2px solid red; */
     backdrop-filter: blur(20px);
-    height: 9vh;
-    /* justify-content: center;
-    align-items: center; */
+    height: 9.2vh;
+    width: 98vw;
+    
+    
     box-shadow: 0px 4px 8px rgb(87, 87, 87);
-
-
-
-    /* flex-wrap: wrap; */
-
+    position:fixed;
+    top: 0.6vh;
+    overflow: hidden;
+    margin-left: 1vh;
+    border-radius: 14px;
 }
-
+    
 .nav>ul {
 
     display: flex;
@@ -57,15 +64,6 @@ header {
     /* flex-wrap: wrap; */
 }
 
-.navelement {
-    animation-name: op;
-    animation-timing-function: ease-out;
-    animation-duration: 1.4s;
-    animation-iteration-count: 1;
-
-    animation-direction: normal;
-
-}
 
 .navimg {
     margin-top: 1vh;
@@ -96,9 +94,15 @@ header {
     transition-timing-function: ease;
     font-family: Caveat;
     font-size: 20px;
+    
 
 
 }
+.brdbtm{
+
+    border-bottom: 4px dotted rgb(9, 8, 8);
+}
+
 
 .navimg:hover {
     transform: scale(1.18);
@@ -133,19 +137,14 @@ header+div {
     background-position: center;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    
     justify-content: center;
     align-items: center;
     /* backdrop-filter:blur(1px); */
     color: rgb(87, 87, 87);
-    padding: 24vh;
+    padding: 28vh;
     font-size: 12vmin;
-    animation-name: op;
-    animation-timing-function: ease-out;
-    animation-duration: 1.4s;
-    animation-iteration-count: 1;
-
-    animation-direction: normal;
+    
     font-family: Caveat;
     text-shadow: 2.4px 2.4px 4px rgb(0, 0, 0);
     box-shadow: 0px 4px 14px rgb(77, 77, 77);
@@ -155,9 +154,10 @@ header+div {
 #dind {
     border: 2px solid black;
     background-color: black;
-    margin-top: 2vw;
-    width: 18vw;
+    margin-top: 6vh;
+    width: 20vw;
     border-radius: 80%;
+    /* margin-left: 4.8vw; */
 }
 
 
@@ -178,11 +178,18 @@ header+div {
     }
 
 }
+.divan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-#d1>span {
-    font-size: 5.8vmin;
+.divan>span {
+    font-size: 5.4vmin;
     text-shadow: none;
-    margin-top: 0px;
+    /* margin-top: -8vw; */
+    /* border: 2px solid black; */
 
 }
 
@@ -437,4 +444,8 @@ h2 {
     /* font-family: Courgette; */
     color: black;
     /* font-weight: bold; */
+}
+
+.disno{
+    display: none;
 }
