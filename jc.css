@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
@@ -105,7 +105,7 @@ header {
 
 
 .navimg:hover {
-    transform: scale(1.18);
+    transform: scale(1.48);
 }
 
 .navbtn:hover {
@@ -448,4 +448,34 @@ h2 {
 
 .disno{
     display: none;
+}
+
+#msg{
+    display:none;
+    
+}
+
+@media only screen and (max-width: 900px){
+#mainbody{
+    display: none;
+}
+/* body{
+    background:linear-gradient(green,yellow);
+    background-repeat: no-repeat;
+} */
+#msg{
+    
+    margin-top: 46vh;
+    display: block;
+    text-align: center;
+    font-family: Staatliches;
+    font-size: 10vmin;
+    color:black;
+    text-shadow: 4.8px 4.8px 2px rgb(163, 162, 219);
+
+
+
+
+}
+
 }
